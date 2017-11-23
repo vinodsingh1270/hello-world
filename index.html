@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<!-- <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+<title></title>
+</head>
+<body ng-app="myApp">
+	<div class="alert alert-info" ng-controller="HelloWorldController">
+    <h2>Welcome : {{ msg1 }}</h2>	
+		<h2>{{ msg2 }}</h2>	
+	</div>
+
+<script type="text/javascript">
+	
+	angular.module("myApp",[]).controller("HelloWorldController", function($scope) {
+    $scope.msg1 = "User";
+    $scope.msg2 = "This is AngularJS Hello World Application.";
+	})
+
+</script>
+</body>
+</html>
